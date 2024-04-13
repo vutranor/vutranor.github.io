@@ -1,0 +1,14 @@
+**2024.04 - Present: Embedded Software Engineer, Siri AB, Gothenburg, Sweden**
+
+**2024.04 - Present: Embedded Software Engineer, Volvo Car AB, Gothenburg, Sweden (Contract)**
+
+  **2024.04 - Present: Project: High Voltage Battery Management**
+
+    * Responsible for an ASIL-D CDD module that manages battery cell voltage and pack current measurements, providing data to application SWCs.
+    * Implemented functionalities to control the ADI ADBMS chip via isoSPI communication, enabling features such as reading cell voltage, pack current, high voltage measurements, cell balancing, diagnostics, and other functionalities as specified in the chip datasheet, HSI, and project requirements.
+    * Developed functional safety features based on the ADI chip safety manual and safety requirements.
+    * Designed and implemented a module for overcurrent detection and fuse activation, including functional safety features.
+    * Responsibilities include requirement development, design documentation, code implementation, static testing, software testing, debugging, and issue resolution.
+    * Developed a Python-based test framework to automate SW testing, enabling the testing team to create and execute test cases efficiently.
+
+    **Programming languages and tools:** Embedded C, AUTOSAR, Davinci Configurator, Git, Python, Lauterbach Trace32, Simulink, ADI ADBMS Monitor, Infineon AURIX

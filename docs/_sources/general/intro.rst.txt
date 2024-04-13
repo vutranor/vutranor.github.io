@@ -1,0 +1,15 @@
+.. figure:: _images/avatar.png
+  :width: 12pc
+  :height: 12pc
+  :align: right
+
+I am a software engineer with over 8 years of expertise in embedded software development for the automotive industry. My core competencies include AUTOSAR and embedded C programming, with a focus on implementing Functional Safety requirements, developing AUTOSAR software components (SWCs), configuring RTE/BSW, and MCAL development, all in compliance with software development processes (e.g., ASPICE, CMMI). Additionally, I have a working knowledge of various communication protocols such as CAN, LIN, SPI, and the Unified Diagnostic Service (UDS) protocol. I also possess leadership skills, with experience in managing and mentoring teams to achieve project goals.
+
+I aspire to continue my career in the automotive domain and further enhance my skills to actively contribute to technological advancements in the industry.
+
+In my free time, I like playing soccer, or badminton.
+
+**Contact:**
+  :Phone/WhatsApp: +84 935618819
+  :Email: vu.tran.or@gmail.com
+  :LinkedIn: https://www.linkedin.com/in/vu-tran-97a631194

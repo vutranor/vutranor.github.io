@@ -1,0 +1,11 @@
+**2017.09 - 2019.11: Embedded Software Engineer, Renesas Design Vietnam, Ho Chi Minh City, Vietnam**
+
+  **2017.09 - 2019.11: Project: RCAR AUTOSAR MCAL**
+
+    * Developed MCAL/CDD modules for the RCAR SoC series of Renesas, with primary responsibility for the ICCOM module, which managed data communication between two cores in the chip system.
+    * Provided support for the development of other modules, including I2C, PORT, and CRC.
+    * Responsibilities included requirement development, design documentation, code implementation, static testing, unit testing, software testing, debugging, and issue resolution.
+    * Participated in Functional Safety ISO26262 activities, including implementing and testing safety requirements, maintaining FuSa checklists, conducting FMEA analysis, and performing various analyses such as thread-safe/re-entrancy analysis, synchronous/asynchronous analysis, and pointer analysis.
+    * Collaborated in joint assessments for ASIL certification.
+
+    **Programming languages and tools:** Embedded C, AUTOSAR, Perl, Python, GHS, ARM, Git, SVN, Reqtify, Enterprise Architect, Lauterbach Trace32, RCAR SoC (R-Car H3, R-Car M3, R-Car V3M, R-Car V3H).

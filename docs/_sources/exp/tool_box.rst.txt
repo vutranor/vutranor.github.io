@@ -1,0 +1,5 @@
+:Primary Skills: AUTOSAR, Embedded C, Leadership, Analysis, Debugging, ASPICE, DaVinci Developer/Configurator, CANoe, ETAS ISOLAR-A, Git, Lauterbach Trace32, iSYSTEM WinIDEA
+
+:Secondary Skills: Cybersecurity, Python, DOORS, ALM, Simulink, reStructuredText, PlantUML, Agile, Scrum
+
+:Languages: Vietnamese, English

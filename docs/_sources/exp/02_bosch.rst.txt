@@ -1,0 +1,22 @@
+**2019.12 - 2024.04: Lead Engineer, Bosch Global Software, Ho Chi Minh City, Vietnam**
+
+  **2020.12 - 2024.04: Project: Phone Key System**
+
+    * Led a team of 15 members, supervising, consulting, defining tasks, and providing technical support to ensure successful task completion.
+    * Communicated, negotiated, and collaborated with stakeholders and customers on delivery planning, work packages, quality assurance, and issue resolution.
+    * Directed ASPICE assessment activities and implemented a process improvement plan to address gaps, achieving ASPICE Level 2.
+    * Developed internal strategies, training plans, and activities to strengthen team capabilities.
+    * As a developer, contributed to the development and integration of software for the ECU responsible for pairing and communication with mobile devices via Bluetooth, UWB or NFC, adhering to Car Connectivity Consortium specifications.
+    * Implemented functionalities for the Master ECUs, including door actuation signal control and cybersecurity features such as owner pairing via Bluetooth, secure communication channels, and secure storage.
+    * Responsibilities included RTE integration, BSW configuration (Com Stack, Diag Stack, NvM, OS, Crypto Stack, etc.), SWC ARXML development, C function implementation, code reviews, static analysis, unit testing with Google Test, and issue resolution reported by testers or customers.
+
+    **Onsite:** Japan, Australia, and India.
+
+    **Programming languages and tools:** Embedded C, AUTOSAR, Davinci Developer and Configurator, Green Hills MULTI, iSYSTEM WinIDEA, ISOLAR-A, ALM, Git, Google Test, reStructuredText, PlantUML, STM Automotive Power Architecture Microcontroller, TI Automotive BLE Microcontroller.
+
+  **2019.12 - 2020.11: Project: ECU Extended IO Control on the Vehicle**
+
+    * Developed applications based on OEM requirements and integrated OEM ECU extracts.
+    * Responsibilities included RTE/BSW integration and configuration based on OEM ECU extracts, application development using MATLAB Simulink, issue resolution reported by testers or customers, and automation test script creation in Capl and Python.
+
+    **Programming languages and tools:** Embedded C, AUTOSAR, Davinci Developer and Configurator, Capl, Python, Green Hills MULTI, iSYSTEM WinIDEA, DOORS, Simulink, NXP Automotive Power Architecture Microcontroller.
