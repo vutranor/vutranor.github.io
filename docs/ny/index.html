@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Tree</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #660000;
+            overflow: hidden;
+        }
+
+        .tree-container {
+            position: relative;
+            left: -10%;  /* Adjust the percentage as needed */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tree {
+            text-align: center;
+            color: #FFF;
+            font-size: 3rem;
+            position: relative;
+        }
+
+        .star {
+            color: gold;
+            font-size: 3rem;
+            position: absolute;
+            top: -6rem;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        .tree div {
+            animation: glow 4s infinite alternate;
+            font-size: 3rem;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 3px #FFF, 0 0 6px #FFD700, 0 0 9px #FFD700; }
+            100% { text-shadow: 0 0 6px #FFF, 0 0 12px #FFD700, 0 0 18px #FFD700; }
+        }
+
+        .falling-star {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #FFD700;
+            opacity: 0;
+            animation: snow-fall 10s linear infinite;
+        }
+
+        @keyframes drop {
+            0% { top: -5rem; opacity: 0; }
+            50% { opacity: 1; }
+            100% { top: 100vh; opacity: 0; }
+        }
+
+        .snowflake {
+            position: absolute;
+            color: #FFF;
+            font-size: 1.5rem;
+            opacity: 0;
+            animation: snow-fall 10s linear infinite;
+        }
+
+        @keyframes snow-fall {
+            0% {
+                top: -10px;
+                opacity: 1;
+            }
+            100% {
+                top: 100vh;
+                opacity: 0;
+            }
+        }
+
+        .trunk {
+            font-size: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .gift {
+            font-size: 2.5rem;
+            position: absolute;
+            color: #FF0000;
+            animation: bounce 2s infinite alternate;
+            z-index: 0;
+        }
+
+        @keyframes bounce {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        /* Buttons */
+        .question-container {
+            position: absolute;
+            top: -20%;
+            left: 60%;
+            display: flex;
+            flex-direction: column; /* Align items vertically */
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Buttons */
+        .buttons-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem; /* Space between the buttons and the text box */
+        }
+
+        .button1 {
+            background-color: #ff0037;
+            color: white;
+            width: 100px;
+            height: 60px;
+            font-size: 0rem;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .button2 {
+            background-color: #002fff;
+            color: white;
+            width: 100px;
+            height: 60px;
+            font-size: 0rem;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            background-color: #ff0055b7;
+        }
+
+        .button2:hover {
+            background-color: #0066ffaf;
+        }
+
+        /* Heart */
+        .heart {
+            position: relative;
+            font-size: 10rem;
+            top: 20%;
+            color: red;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        /* Text Box */
+        .text-box {
+            font-size: 1rem;
+            padding: 1rem;
+            color: #FFF;
+            background-color: transparent;
+            text-align: center;
+            width: 2000px;
+            outline: none;
+            animation: text-glow 1.5s infinite alternate;
+            position: relative;
+        }
+        /* Glowing Text */
+        @keyframes text-glow {
+            0% {
+                text-shadow: 0 0 5px #FFF, 0 0 10px #FFD700, 0 0 15px #FFD700;
+            }
+            100% {
+                text-shadow: 0 0 10px #FFF, 0 0 20px #FFD700, 0 0 30px #FFD700;
+            }
+        }
+        .text-box:focus {
+            border-color: #FFD700; /* Highlight border on focus */
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+        }
+
+        /* Predefined Glowing Text */
+        .predefined-text {
+            width: 200px;
+            font-size: 2rem;
+            color: #FFF;
+            animation: text-glow 1.5s infinite alternate;
+            padding: 1rem;
+            text-align: center;
+            opacity: 0; /* Initially hidden */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <div class="text-box">Chúc Hương năm mới vui hơn cũ</div>
+        <div class="text-box">Tiền nhiều trăm củ đầy trong tủ</div>
+        <div class="text-box">Hạnh phúc sức khỏe luôn đầy đủ</div>
+        <div class="text-box">Chúc em sớm thuộc về anh Vũ</div>
+    </div>  
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function createFallingStar() {
+                const star = document.createElement("div");
+                star.classList.add("falling-star");
+                star.innerHTML = "&#9733;";
+                document.body.appendChild(star);
+
+                const size = Math.random() * 10 + 10;
+                star.style.fontSize = `${size}px`;
+                star.style.left = `${Math.random() * 100}vw`;
+
+                const speed = Math.random() * 5 + 5;
+                star.style.animationDuration = `${speed}s`;
+
+                star.addEventListener('animationend', () => {
+                    star.remove();
+                    createFallingStar();
+                });
+            }
+
+            for (let i = 0; i < 100; i++) {
+                setTimeout(createFallingStar, i * 100);
+            }
+        });
+    </script>
+
+</body>
+</html>
